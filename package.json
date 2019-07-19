@@ -2,6 +2,7 @@
   "name": "react-boilerplate",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+"homepage":"https://arpit-krazybee.github.io/react-boilerplate/",
   "repository": {
     "type": "git",
     "url": "git://github.com/react-boilerplate/react-boilerplate.git"
@@ -41,6 +42,8 @@
     "test:clean": "rimraf ./coverage",
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+"predeploy":"npm run build",
+"deploy":"gh-pages -d build",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "prettify": "prettier --write"
   },
@@ -72,6 +75,7 @@
     "cross-env": "5.2.0",
     "express": "4.16.4",
     "fontfaceobserver": "2.1.0",
+    "gh-pages": "^2.0.1",
     "history": "4.9.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "3.0.0",
